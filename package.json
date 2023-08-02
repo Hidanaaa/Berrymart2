@@ -1,6 +1,7 @@
 {
   "name": "berrymart2",
   "version": "0.1.0",
+  "homepage": "https://hidanaaa.github.io/Berrymart2",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -16,8 +17,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "eslint": "eslint src"
-    
+    "eslint": "eslint src",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -36,5 +38,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "tailwindcss": "^3.3.3"
   }
 }
