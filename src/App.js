@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/header/NavBar';
+import { Search } from './components/header/Search';
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-md md:text-6xl font-bold underline bg-red-100">
-        Hello world!
-      </h1>
+      <Search />
+      <NavBar />
     </div>
   );
 }
